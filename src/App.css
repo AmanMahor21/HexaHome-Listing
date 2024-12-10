@@ -1,0 +1,4 @@
+.scrollable-element::-webkit-scrollbar {
+  width: 10px; /* Width for vertical scrollbar */
+  height: 10px; /* Height for horizontal scrollbar */
+}
