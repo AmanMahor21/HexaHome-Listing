@@ -14,7 +14,7 @@ const ImageSlider = ({ images, propertyType }) => {
         return prevIndex === 0 ? prevIndex : prevIndex - 1;
       }
     });
-  };
+  }; 
 
   return (
     <div className="relative w-full h-[200px] overflow-hidden">

@@ -13,7 +13,7 @@ export const mockListing = [
   {
     price: "₹ 74L",
     label: "2BHK Builder House for sale",
-    location: "in MG Road, Bengaluru, Karnataka", // Changed city to Bengaluru
+    location: "in MG Road, Bengaluru, Karnataka", 
     images: [house1, house2, house3],
     propetyInfo: {
       status: "Ready to Move",
@@ -32,7 +32,7 @@ export const mockListing = [
   {
     price: "₹ 1.2Cr",
     label: "4BHK Villa for sale",
-    location: "in Jubilee Hills, Hyderabad, Telangana", // Changed city to Hyderabad
+    location: "in Jubilee Hills, Hyderabad, Telangana",
     images: [house4, house5],
     propetyInfo: {
       status: "Ready to Move",
@@ -51,7 +51,7 @@ export const mockListing = [
   {
     price: "₹ 56L",
     label: "3BHK Apartment for sale",
-    location: "in Koregaon Park, Pune, Maharashtra", // Changed city to Pune
+    location: "in Koregaon Park, Pune, Maharashtra", 
     images: [house2, house3, house6],
     propetyInfo: {
       status: "Under Construction",
@@ -70,7 +70,7 @@ export const mockListing = [
   {
     price: "₹ 85L",
     label: "2BHK Apartment for sale",
-    location: "in DLF Phase 3, Gurugram, Haryana", // Changed city to Gurugram
+    location: "in DLF Phase 3, Gurugram, Haryana", 
     images: [house3, house5],
     propetyInfo: {
       status: "Ready to Move",
@@ -89,7 +89,7 @@ export const mockListing = [
   {
     price: "₹ 95L",
     label: "3BHK Individual Floor for sale",
-    location: "in Banjara Hills, Hyderabad, Telangana", // Changed city to Hyderabad
+    location: "in Banjara Hills, Hyderabad, Telangana", 
     images: [house1, house6, house7],
     propetyInfo: {
       status: "Under Construction",
@@ -108,7 +108,7 @@ export const mockListing = [
   {
     price: "₹ 1.8Cr",
     label: "5BHK Villa for sale",
-    location: "in ECR Road, Chennai, Tamil Nadu", // Changed city to Chennai
+    location: "in ECR Road, Chennai, Tamil Nadu", 
     images: [house4, house7],
     propetyInfo: {
       status: "Ready to Move",
@@ -127,7 +127,7 @@ export const mockListing = [
   {
     price: "₹ 48L",
     label: "1BHK Apartment for sale",
-    location: "in Whitefield, Bengaluru, Karnataka", // Changed city to Bengaluru
+    location: "in Whitefield, Bengaluru, Karnataka", 
     images: [house2, house4],
     propetyInfo: {
       status: "Under Construction",
@@ -146,7 +146,7 @@ export const mockListing = [
   {
     price: "₹ 67L",
     label: "2BHK Apartment for sale",
-    location: "in Powai, Mumbai, Maharashtra", // Changed city to Mumbai
+    location: "in Powai, Mumbai, Maharashtra", 
     images: [house5, house7],
     propetyInfo: {
       status: "Ready to Move",
@@ -165,7 +165,7 @@ export const mockListing = [
   {
     price: "₹ 2.5Cr",
     label: "2BHK Individual Floor for sale",
-    location: "in Marine Drive, Mumbai, Maharashtra", // Changed city to Mumbai
+    location: "in Marine Drive, Mumbai, Maharashtra", 
     images: [house6, house7, house1],
     propetyInfo: {
       status: "Ready to Move",
@@ -184,7 +184,7 @@ export const mockListing = [
   {
     price: "₹ 1.1Cr",
     label: "3BHK Apartment for sale",
-    location: "in Sector 21, Chandigarh", // Changed city to Chandigarh
+    location: "in Sector 21, Chandigarh", 
     images: [house3, house4],
     propetyInfo: {
       status: "Under Construction",

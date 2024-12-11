@@ -24,7 +24,6 @@ function App() {
           : "Home > property for buy in"}
       </div>
       <div className="flex justify-center relative">
-        {/* <FilterPropety_left /> */}
         <PropertyListing />
       </div>
     </div>

@@ -2,6 +2,7 @@ import React, { useContext, useEffect, useRef, useState } from "react";
 import { mockListing } from "../constants/mockListing";
 import { HexahomeContext } from "../context/ContextProvider";
 import PropertyCard from "./PropertyCard";
+import No_property from "../assets/images/No_property.svg";
 
 const PropertyListing = () => {
   const { selectedValue } = useContext(HexahomeContext);
@@ -15,6 +16,7 @@ const PropertyListing = () => {
     const matchedProperty = mockListing.filter((ele) =>
       ele.location.toLowerCase().includes(selectedValue?.label.toLowerCase())
     );
+    console.log(matchedProperty);
     setFilteredProperty(matchedProperty);
 
     if (selectedValue?.label) {
@@ -22,7 +24,7 @@ const PropertyListing = () => {
     }
   }, [selectedValue]);
 
-  // Handle scroll natigation of propertyInfo 
+  // Handle scroll natigation of propertyInfo
   const handleInfoScroll = (move, index) => {
     const scrollContainer = propertyInfo_scroll.current[index];
     if (scrollContainer) {
@@ -34,7 +36,6 @@ const PropertyListing = () => {
     }
   };
 
-
   const showCard =
     filteredProperty?.length > 0 ? filteredProperty : mockListing;
   return (
@@ -45,7 +46,15 @@ const PropertyListing = () => {
           : "Property for sale in"}
       </h1>
       <div className="space-y-6 flex items-center flex-col">
-        {showCard.length > 0 ? (
+        {(selectedValue && filteredProperty.length === 0) ||
+        showCard.length === 0 ? (
+          <div>
+            <img src={No_property} alt="No properties available" />
+            <h2 className="text-2xl text-center p-2 font-semibold text-slate-700">
+              Discover more options!
+            </h2>
+          </div>
+        ) : (
           showCard.map((property, index) => (
             <PropertyCard
               key={index}
@@ -55,8 +64,6 @@ const PropertyListing = () => {
               propertyInfo_scroll={propertyInfo_scroll}
             />
           ))
-        ) : (
-          <div>No properties available</div>
         )}
       </div>
     </div>
